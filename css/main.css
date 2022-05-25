@@ -15,6 +15,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -247,6 +248,7 @@ contacts--section {
   font-weight: 700;
   font-size: 60px;
   line-height: 1;
+  margin-bottom: 60px;
 }
 
 .contacts__wrap {
@@ -297,7 +299,8 @@ contacts--section {
   gap: 30px;
 }
 
-.social__item {
+.social__link {
+  display: inline-block;
   outline: 2px solid transparent;
   outline-offset: 2px;
   border-radius: 50%;
@@ -315,11 +318,11 @@ contacts--section {
   color: #cdf478;
 }
 
-.social__item:focus {
+.social__link:focus {
   outline-color: #cdf478;
 }
 
-.social__item:active {
+.social__link:active {
   color: #cdf478;
   outline-color: #cdf478;
 }
