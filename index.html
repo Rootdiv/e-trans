@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-trans - Начни двигаться по новому</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""></script> -->
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -42,7 +50,7 @@
       </section>
       <section class="product" id="gyroscooter">
         <div class="container product__container">
-          <img src="./img/gyroscooter.png" alt="Гироскутер" />
+          <img class="product__photo" src="./img/gyroscooter.png" alt="Гироскутер" />
           <div class="product__content">
             <h2 class="product__title">Гироскутер</h2>
             <p class="product__description">
@@ -57,7 +65,7 @@
       </section>
       <section class="product" id="monowheels">
         <div class="container product__container">
-          <img src="./img/monowheels.png" alt="Моноколесо" />
+          <img class="product__photo" src="./img/monowheels.png" alt="Моноколесо" />
           <div class="product__content">
             <h2 class="product__title">Моноколесо</h2>
             <p class="product__description">
@@ -72,7 +80,7 @@
       </section>
       <section class="product" id="electroscooter">
         <div class="container product__container">
-          <img src="./img/electroscooter.png" alt="Электросамокат" />
+          <img class="product__photo" src="./img/electroscooter.png" alt="Электросамокат" />
           <div class="product__content">
             <h2 class="product__title">Электросамокат</h2>
             <p class="product__description">
@@ -156,7 +164,7 @@
           </div>
           <div class="footer__column contacts">
             <h3 class="footer__title">Контакты:</h3>
-            <div class="contacts__list">
+            <div class="contacts__list contacts__list--footer">
               <a href="tel:+73848833812" class="contacts__link">+7(384)883-38-12</a>
               <a href="mailto:ETrans@gmail.com" class="contacts__link">ETrans@gmail.com</a>
             </div>
