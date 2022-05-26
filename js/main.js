@@ -15,8 +15,18 @@ const init = () => {
     },
   );
   myMap.geoObjects.add(myPlaceMark);
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 1240) {
+      myMap.setCenter([55.7718, 37.6256]);
+      myPlaceMark.options.set('iconImageSize', [50, 50]);
+    } else {
+      myMap.setCenter([55.7718, 37.6316]);
+      myPlaceMark.options.set('iconImageSize', [70, 70]);
+    }
+  });
 };
 ymaps.ready(init);
+
 
 // const map = L.map('map').setView([55.7726, 37.63], 17);
 
