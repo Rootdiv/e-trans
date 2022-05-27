@@ -112,6 +112,7 @@ const createModal = (title, description) => {
         <use href="./img/sprite.svg#close" />
       </svg>
     `,
+    ariaLabel: 'Закрыть модальное окно.',
   });
 
   overlayElem.addEventListener('click', event => {
