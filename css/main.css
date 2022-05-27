@@ -387,6 +387,93 @@ contacts--section {
   line-height: 1.3;
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal__block {
+  position: relative;
+  width: 680px;
+  padding: 40px 15px;
+  margin: auto;
+  background-color: #fff;
+  cursor: default;
+  border: 1px solid #646464;
+  border-radius: 8px;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  max-width: 320px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.modal__text {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.modal__input {
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+  width: 100%;
+  height: 78px;
+  padding: 15px;
+}
+
+.modal__input::placeholder {
+  color: #c0c0c0;
+}
+
+.modal__btn {
+  background-color: #b8ff20;
+}
+
+.modal__btn:hover {
+  background-color: #cdf478;
+}
+
+.modal__btn:focus {
+  border-color: #18171a;
+}
+
+.modal__btn:active {
+  color: #fff;
+  transition-duration: 0.2s;
+  background-color: #18171a;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
 @media (max-width: 1200px) {
   .navigation__list {
     gap: 20px;
@@ -488,6 +575,10 @@ contacts--section {
     margin-bottom: 10px;
   }
 
+  .product__description {
+    -webkit-line-clamp: 3;
+  }
+
   .contacts--section {
     padding-top: 25px;
   }
@@ -531,6 +622,14 @@ contacts--section {
   .footer .social__link {
     width: 36px;
     height: 36px;
+  }
+
+  .modal__block {
+    width: 520px;
+  }
+
+  .btn.modal__btn {
+    width: 260px;
   }
 }
 
@@ -584,10 +683,6 @@ contacts--section {
     align-items: center;
   }
 
-  .product__description {
-    -webkit-line-clamp: 3;
-  }
-
   .contacts__title {
     margin-bottom: 15px;
     padding: 0;
@@ -619,5 +714,9 @@ contacts--section {
   .footer__columns {
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  .modal__block {
+    width: 290px;
   }
 }
